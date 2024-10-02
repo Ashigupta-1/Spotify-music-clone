@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spotify-your refressment is here</title>
+    <title>Music Player Clone</title>
     <link rel="stylesheet" href="spotify.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src=".vscode/music img.jpeg" alt="spotify">MUSIC HUB</li>
-            <li>Home</li>
-            <li>About</li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h1>best</h1>
-        <div class="songlist"></div>
-        <div class="songbanner"></div>
-    </div>
-    <div class="bottom">
-        <input type="range" name="range" id="mypressbar" min="0" max="100">
-        <div class="icons">
-            <!--font-->
-            <i class="fa-regular fa-circle-play"></i>
+    <div class="music-player">
+        <h1>Music Player</h1>
+
+        <div class="song-list">
+            <ul id="songs">
+                <li data-src="songs/song1.mp3">Song 1</li>
+                <li data-src="songs/song2.mp3">Song 2</li>
+                <li data-src="songs/song3.mp3">Song 3</li>
+            </ul>
         </div>
+
+        <div class="controls">
+            <button id="prev">Previous</button>
+            <button id="play">Play</button>
+            <button id="next">Next</button>
+        </div>
+
+        <audio id="audio" preload="auto"></audio>
     </div>
-    <script src="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"></script>
+
     <script src="spotify.js"></script>
 </body>
 </html>

@@ -1,50 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap');
-body{
-    background-color: antiquewhite;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-nav{
-    font-family:'bona', sans-serif ;
-}
-nav ul{
-    display: flex;/*display flex kare sare item horizontal aa jaye ge*/
-    align-items: center;
-    list-style-type: none;/*is se ye dot hat jata ha*/
-    height: 65px;
-    background-color: black;
-    color: white;
-    padding: 0 12px;
-}
-.brand img{
-    padding: 0 8px;
-    width: 80px;
-    height: 67px;
-    border-radius: 50%;
-}
-.brand{
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
-}
-.container{
-    min-height: 75vh;/*is se ye niche chla jata ha*/
-}
-.bottom{
-    position: sticky;
-    height: 100px;
-    background-color: black;
-    color: white;
-    bottom: 0;
+body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
-#myprogressbar{
-    width: 80vw;
 
+.music-player {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.song-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.song-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
 }
